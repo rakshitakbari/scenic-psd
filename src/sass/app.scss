@@ -1,0 +1,43 @@
+// Fonts
+// @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+// @import "cover";
+
+@import "header";
+@import "index";
+@import "font-awesome";
+@import "about";
+@import "datatable";
+@import "hero";
+@import "services";
+@import "portfolio";
+@import "blog";
+@import "footer";
+@import "contact-us";
+
+main {
+    .container {
+        min-height: 500px;
+    }
+}
+#next-section{
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    position: relative;
+    z-index: 2;
+    @include media-breakpoint-down(sm){
+        padding: 1rem 0;
+    }
+}
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale;
+}
